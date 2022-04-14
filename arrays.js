@@ -1,18 +1,22 @@
-/*
-    In this file, we'll be continuing our story
-    with Jon being allowed to flee his fight with Jamie.
-*/
+let backpack = []
 
-let jonattack = 35;
-let jamieattack = 25;
+backpack.push('Hatcher', 'Water')
+backpack.unshift('Mac & Cheese')
+backpack.push('Sleeping bag')
 
-if(jonattack > jamieattack){console.log ('john has the better attack');}
-else if(johnattack < jamieattack){console.log ('jamie has the better attack');}
-else if(jonattack === jamieattack){console.log ('jon and jamie have the same attack');}
+let belt = backpack.splice(1, 1)
 
-let jonhealth = 100;
+backpack.pop()
+backpack.push('Sleeping bag')
 
-if(jonhealth <= 0){console.log ('jon has been slayn');}
-else (jonhealth = jonhealth - jamieattack)
-// jonhealth -= jamieattack
-console.log(`jons health is down to ${jonhealth}`);
+let backpack2 = backpack.slice(1, 3)
+
+backpack2.push('blanket', 'knife')
+
+// for(let i = 0; i < backpack.length; i++){console.log(backpack[i])}
+
+// for(let i = 0; i < backpack.length; i++){console.log(backpack2[i])}
+
+// for(let i = 0; i < 2; i++){console.log(backpack[i])
+// console.log(backpack2[i])}
+
